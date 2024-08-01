@@ -1,0 +1,21 @@
+h1{
+    color: blue;
+}
+header nav ul{
+    display:flex;
+}
+header nav ul li{
+    margin: 20px;
+}
+.a-propos h2{
+    color: gold;
+}
+.travail h2{
+    color: blueviolet;
+}
+.cv h2{
+    color: lightgreen;
+}
+.contact h2{
+    color: darkorange;
+}
