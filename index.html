@@ -3,64 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Zech</title>
+    <title>Portfolio de Sam</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #fffefe;
         }
-        header {
-            background-color: #21004d;
-            color: rgb(10, 51, 54);
-            padding: 10px 0;
+        header, footer, nav, section, article {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #141111;
         }
         nav {
-            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffffff;
         }
         nav a {
-            color: rgb(0, 108, 141);
-            margin: 0 15px;
             text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            display: inline-block;
         }
-        section {
-            padding: 20px;
-            margin: 10px;
-            background-color: rgb(249, 254, 255);
-            border-radius: 5px;
+        nav a:hover {
+            background-color: #ffffff;
         }
         footer {
-            background-color: #f5f5f5;
-            color: rgb(255, 255, 255);
             text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-        }
-        footer p {
-            margin: 0;
-        }
-        footer a {
-            color: #2b0101;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .video-container {
-            text-align: center;
-        }
-        .video-container iframe {
-            width: 100%;
-            max-width: 600px;
-            height: 340px;
-            border: none;
+            clear: both;
         }
     </style>
 </head>
 <body>
     <header>
+        <h1>Portfolio de Sam</h1>
         <nav>
             <a href="#accueil">Accueil</a>
             <a href="#a-propos">À propos</a>
@@ -70,50 +48,54 @@
         </nav>
     </header>
 
-    <section id="accueil">
-        <h1>Bienvenue sur mon portfolio</h1>
-        <p>Découvrez mon travail et mes projets.</p>
+    <section class="accueil">
+        <h2>Accueil</h2>
+        <p>Bienvenue sur mon portfolio. Découvrez mes réalisations et compétences.</p>
     </section>
 
-    <section id="a-propos">
+    <section class="a-propos">
         <h2>À propos</h2>
-        <p>Je m'appelle Zech, je suis passionné par le développement web et le design.</p>
-        <div class="video-container">
-            <video src=""></video>
-        </div>
+        <p>Je suis passionné par le développement web et j'aspire à créer des solutions innovantes.</p>
+        <img src="Mario w headphones.jpg" alt="">
     </section>
-<img src="Mario w headphones.jpg" alt="" srcset="">
-    <section id="travail">
+
+    <section class="travail">
         <h2>Travail</h2>
         <ul>
-            <li>Projet 1: Description du projet 1</li>
-            <li>Projet 2: Description du projet 2</li>
-            <li>Projet 3: Description du projet 3</li>
+            <li>projet 1- Site e-commerce</li>
+            <li>Blog personnel</li>
+             <li>Application de gestion de tâches</li>
         </ul>
     </section>
 
-    <section id="cv">
+    <section class="cv">
         <h2>CV</h2>
-        <p>Téléchargez mon CV <a href="votre-cv.pdf" download>Télécharger</a>.</p>
+        <ul>
+            <li>2023 - Développeur Web chez XYZ</li>
+            <li>2021-2022 - Stage en développement chez ABC</li>
+        </ul>
+        <form action="/telecharger-cv" method="get">
+            <p><a href="/chemin-vers-votre-cv" target="_blank">Télécharger mon CV</a></p>
+        </form>
     </section>
 
-    <section id="contact">
+    <section class="contact">
         <h2>Contact</h2>
-        <form action="votre-script-de-formulaire.php" method="post">
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-            <input type="submit" value="Envoyer">
+        <form action="submit_form.php" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="prenom">prenom :</label>
+            <input type="text" id="prenom" name="nom" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">password :</label>
+            <input type="password" name="" id="password">
         </form>
     </section>
 
     <footer>
-        <p>Nom: Zech</p>
-        <p>Email: <a href="mailto:samsevil687@gmail.com">samsevil687@gmail.com</a></p>
+        <p>Adresse email : <a href="mailto:samsevil687@gmail.com">samsevil687@gmail.com</a></p>
+        </ul>
     </footer>
 </body>
 </html>
-<input type="password" id="password" name="password" value="Samjose100109" required><br><br>
